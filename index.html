@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Salary Management - Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script type="module" src="https://unpkg.com/@material/web@latest/all.js"></script>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #121212;
+      color: white;
+      font-family: Roboto, Arial, sans-serif;
+    }
+    .login-container {
+      width: 320px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    md-filled-button {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <md-outlined-text-field label="Username" id="username"></md-outlined-text-field>
+    <md-outlined-text-field type="password" label="Password" id="password"></md-outlined-text-field>
+    <md-filled-button id="loginBtn">Login</md-filled-button>
+  </div>
+  <script type="module">
+    const loginBtn = document.getElementById('loginBtn');
+    loginBtn.addEventListener('click', () => {
+      window.location.href = 'main.html';
+    });
+  </script>
+</body>
+</html>
